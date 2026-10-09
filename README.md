@@ -36,6 +36,3 @@ Uses `bash` and GNU `timeout` *within* the testbed for command execution. Intend
 
 A `--rm` container runs `sleep <deployment_timeout>` as PID 1, imposing a bounded maximum lifetime independent of the client. Explicit stop and context-manager exit also clean up. Build contexts exclude common private credential paths and symlinks; always inspect task sources before building untrusted Dockerfiles, as a Dockerfile can make arbitrary outbound connections during build.
 
-## License
-
-This repository is original adaptation code. The standalone runtime is released under the MIT License. This license **does not** apply to the separate CMU assignment materials.
